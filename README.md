@@ -28,7 +28,7 @@ Please check our [paper](https://arxiv.org/abs/1910.02319) for more details rega
 1. Memory restricted indicates whether the data (storage in .h5 files) do not fit into memory. In this case, set the variable memory_restricted to True.
 2. Batch size (required only if memory_restricted is True) indicates the number of samples loaded into memory and sent to the incremental methods. 
 
-### Results
+## Results
 Tables below compare our method with existing incremental partial least squares methods in terms of accuracy and time complexity for
 estimating the projection matrix. Please check our [paper](https://arxiv.org/abs/1910.02319) for more detailed results.
 
