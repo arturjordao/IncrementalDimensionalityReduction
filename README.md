@@ -9,19 +9,29 @@ requires all the data to be in memory in advance, which is often impractical due
 prevents us from employing traditional dimensionality reduction methods on streaming applications, where the data are being generated continuously.
 To handle this problem, many works have proposed incremental versions of traditional dimensionality reduction methods, where the idea is to 
 estimate the projection matrix using a single data sample at a time while keeping some properties of the traditional dimensionality 
-reduction methods.
+reduction methods. 
+Figures below illustrate the behavior of different incremental dimensionality reduction methods.  Left: Accuracy in classifying data arriving sequentially. Right: Time for estimating the projection matrix according to the number of samples.
+
+<table>
+  <tr>
+    <td><img src="Figures/LFW.gif"></td>
+    <td><img src="Figures/TimeIssues.gif"></td>
+  </tr>
+ </table>
+
+<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="LICENSE" align="right">
 
 ## Requirements
 - [Scikit-learn](http://scikit-learn.org/stable/)
 - [Python 3](https://www.python.org/)
 
 ## Quick Start
-[binary_classification.py](binary_classification.py) and [multiclass_classification.py](multiclass_classification.py) provide examples of our method 
+[binary_classification.py](Code/binary_classification.py) and [multiclass_classification.py](Code/multiclass_classification.py) provide examples of our method 
 (named Covariance-free Partial Least Squares - CIPLS) to binary and multiclass problems, respectively.
 
 ## Parameters
 Our method takes a single parameter:
-1. Number of components (see n_components in [binary_classification.py](binary_classification.py) and [multiclass_classification.py](multiclass_classification.py))
+1. Number of components (see n_components in [binary_classification.py](Code/binary_classification.py) and [multiclass_classification.py](Code/multiclass_classification.py))
 Please check our [paper](https://arxiv.org/abs/1910.02319) for more details regarding this parameter, as well as the parameters from other methods.
 
 ## Additional Parameters
@@ -55,14 +65,13 @@ m, n denote dimensionality of the original data and number of samples, while c, 
 
 Please cite our [paper](https://arxiv.org/abs/1910.02319) in your publications if it helps your research.
 ```bash
-@article{Jordao:2018,
+@inproceedings{Jordao:2020,
 author    = {Artur Jordao,
 Maiko Lie,
 Victor Hugo Cunha de Melo and
 William Robson Schwartz},
 title     = {Covariance-free Partial Least Squares: An Incremental Dimensionality Reduction Method},
-journal = {ArXiv e-prints},
-eprint={1910.02319},
+booktitle = {Winter Conference on Applications of Computer Vision (WACV). Accepted for publication.},
 }
 ```
 We would like to thank Xue-Qiang, Zeng Guo-Zheng Li, Raman Arora, Poorya Mianjy, Alexander Stott and Teodor Marinov for sharing their source code.
