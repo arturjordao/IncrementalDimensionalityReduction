@@ -71,7 +71,7 @@ Maiko Lie,
 Victor Hugo Cunha de Melo and
 William Robson Schwartz},
 title     = {Covariance-free Partial Least Squares: An Incremental Dimensionality Reduction Method},
-booktitle = {Winter Conference on Applications of Computer Vision (WACV). Accepted for publication.},
+booktitle = {Winter Conference on Applications of Computer Vision (WACV).},
 }
 ```
 We would like to thank Xue-Qiang, Zeng Guo-Zheng Li, Raman Arora, Poorya Mianjy, Alexander Stott and Teodor Marinov for sharing their source code.
